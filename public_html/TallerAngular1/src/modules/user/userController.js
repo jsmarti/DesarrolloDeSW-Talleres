@@ -18,6 +18,9 @@
                         this.formatD=function(){
                         return $scope.dt.getDate()+'/'+($scope.dt.getMonth()+1)+'/'+($scope.dt.getYear()+1900);  
                       }; 
+                        this.clear=function(){
+                            $scope.showResult=false;
+                        };
                         
                        $scope.today = function() {
                        $scope.dt = new Date();
